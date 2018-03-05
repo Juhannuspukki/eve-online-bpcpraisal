@@ -181,7 +181,7 @@ def main():
             products = list(products)
 
             for i in range(math.ceil(len(bom)/50)):
-                link = "http://api.eve-central.com/api/marketstat/json?"
+                link = "https://api.evemarketer.com/ec/marketstat/json?"
                 for h in range(50):
                     try:
                         boom = bom[h]
@@ -201,7 +201,7 @@ def main():
                 del bom[:50]
 
             for i in range(math.ceil(len(products)/50)):
-                link = "http://api.eve-central.com/api/marketstat/json?"
+                link = "https://api.evemarketer.com/ec/marketstat/json?"
                 for h in range(50):
                     try:
                         produkter = products[h]
